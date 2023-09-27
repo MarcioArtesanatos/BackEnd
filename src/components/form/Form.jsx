@@ -11,6 +11,9 @@ function ItemCadastro() {
   const [valor, setValor] = useState("");
   const [cores, setCores] = useState("");
   const [quantidade, setQuantidade] = useState("");
+  const [largura, setLargura] = useState("");
+  const [altura, setAltura] = useState("");
+  const [comprimento, setComprimento] = useState("");
   const [peso, setPeso] = useState("");
   const [descricao, setDescricao] = useState("");
   const [imagens, setImagens] = useState([]);
@@ -22,6 +25,9 @@ function ItemCadastro() {
   const handleCoresChange = (e) => { setCores(e.target.value); };
   const handleQuantidadeChange = (e) => { setQuantidade(e.target.value); };
   const handlePesoChange = (e) => { setPeso(e.target.value); };
+  const handleLarguraChange = (e) => { setLargura(e.target.value); };
+  const handleAlturaChange = (e) => { setAltura(e.target.value); };
+  const handleComprimentoChange = (e) => { setComprimento(e.target.value); };
   const handleDescricaoChange = (e) => { setDescricao(e.target.value); };
   
   const handleImagensChange = (e) => {
@@ -40,6 +46,9 @@ function ItemCadastro() {
         valor: valor,
         cores: cores,
         quantidade: quantidade,
+        largura: largura,
+        altura: altura,
+        comprimento: comprimento,
         peso: peso,
         descricao: descricao
       });
@@ -61,6 +70,9 @@ function ItemCadastro() {
       setValor("");
       setCores("");
       setQuantidade("");
+      setLargura("");
+      setAltura("");
+      setComprimento("");
       setPeso("");
       setDescricao("");
       setImagens([]);
@@ -109,6 +121,21 @@ function ItemCadastro() {
         <div>
           <label>Peso:</label>
           <input type="text" value={peso} onChange={handlePesoChange} />
+        </div>
+
+        <div>
+          <label>Largura:</label>
+          <input type="text" value={largura} onChange={handleLarguraChange} />
+        </div>
+
+        <div>
+          <label>Altura:</label>
+          <input type="text" value={altura} onChange={handleAlturaChange} />
+        </div>
+
+        <div>
+          <label>Comprimento:</label>
+          <input type="text" value={comprimento} onChange={handleComprimentoChange} />
         </div>
 
         <div>
