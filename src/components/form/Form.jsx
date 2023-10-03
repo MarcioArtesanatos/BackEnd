@@ -140,7 +140,7 @@ function ItemCadastro() {
 
         <div>
           <label>Descrição:</label>
-          <input type="text" value={descricao} onChange={handleDescricaoChange} />
+          <textarea value={descricao} rows={15} cols={60} onChange={handleDescricaoChange}></textarea>
         </div>
 
         <div>
