@@ -90,57 +90,57 @@ function ItemCadastro() {
 
         <div>
           <label>Categoria:</label>
-          <input type="text" value={categoria} onChange={handleCategoriaChange} />
+          <input type="text" value={categoria} onChange={handleCategoriaChange} required />
         </div>
 
         <div>
           <label>Produto:</label>
-          <input type="text" value={produto} onChange={handleProdutoChange} />
+          <input type="text" value={produto} onChange={handleProdutoChange} required />
         </div>
 
         <div>
           <label>Avaliação:</label>
-          <input type="text" value={avaliacao} onChange={handleAvaliacaoChange} />
+          <input type="text" value={avaliacao} onChange={handleAvaliacaoChange} required />
         </div>
 
         <div>
           <label>Valor:</label>
-          <input type="text" value={valor} onChange={handleValorChange} />
+          <input type="text" value={valor} onChange={handleValorChange} required />
         </div>
 
         <div>
           <label>Cores:</label>
-          <input type="text" value={cores} onChange={handleCoresChange} />
+          <input type="text" value={cores} onChange={handleCoresChange} required />
         </div>
 
         <div>
           <label>Quantidade:</label>
-          <input type="text" value={quantidade} onChange={handleQuantidadeChange} />
+          <input type="text" value={quantidade} onChange={handleQuantidadeChange} required />
         </div>
 
         <div>
           <label>Peso:</label>
-          <input type="text" value={peso} onChange={handlePesoChange} />
+          <input type="text" value={peso} onChange={handlePesoChange} required />
         </div>
 
         <div>
           <label>Largura:</label>
-          <input type="text" value={largura} onChange={handleLarguraChange} />
+          <input type="text" value={largura} onChange={handleLarguraChange} required />
         </div>
 
         <div>
           <label>Altura:</label>
-          <input type="text" value={altura} onChange={handleAlturaChange} />
+          <input type="text" value={altura} onChange={handleAlturaChange} required />
         </div>
 
         <div>
           <label>Comprimento:</label>
-          <input type="text" value={comprimento} onChange={handleComprimentoChange} />
+          <input type="text" value={comprimento} onChange={handleComprimentoChange} required />
         </div>
 
         <div>
           <label>Descrição:</label>
-          <textarea value={descricao} rows={15} cols={60} onChange={handleDescricaoChange}></textarea>
+          <textarea value={descricao} rows={15} cols={60} onChange={handleDescricaoChange} required></textarea>
         </div>
 
         <div>
